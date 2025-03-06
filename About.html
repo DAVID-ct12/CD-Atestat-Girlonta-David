@@ -12,10 +12,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 3px outset rgb(255, 255, 255) ;
             padding: 10px ;
             height: 20px;
             text-align: center;
+            backdrop-filter: blur(35px);
+            box-shadow: 0px 0px 30px rgba(227,228,237,0.37);
+            margin: 10px;
+            border-radius: 15px;
         }
         .redirect{
             display: flex;
@@ -38,7 +41,7 @@
             align-items: center;
             margin: 30px;
             text-align: justify;
-
+            color: rgb(41, 40, 38);
         }
         .imgcv{
             margin: 20px;
@@ -50,49 +53,56 @@
             justify-content: center;
             align-items: center;
             margin: 70px;
+            color: antiquewhite;
         }
         .imgcv1{
             display: flex;
-
+            border: 10px solid;
         }
         .half{
             display: flex;
             width: 50%;
         }
         .font{
-        font-family: "Playfair Display", serif;
-        font-optical-sizing: auto;
-        font-weight: weight;
-        font-style: normal;
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
         }
+        .nav a:hover{
+            color: white;
+            font-size: 16px;
+        }
+    
 
 
     </style>
 </head>
-<body style="background-color: rgb(180, 170, 170);">
-    <div class="nav" style="background-color: white;">
+<body style="background-color: rgb(7, 15, 43)">
+    <div class="nav" style="background-color: rgba(41, 40, 38, 0.808);">
         <div>
-        <a href="/main.html"><img src="/logo.jpg" style="height: 35px;width: 35px;"></a>
+            <a href="/main.html"><img src="/boxing-gloves.png" style="height: 30px;width: 35px;"></a>
         </div>
         <div class="redirect">
-            <a href="/Produse.html">Produse</a>
-            <a href="/Imbracaminte.html">Imbracaminte</a>
-            <a href="/Sporturi.html">Sporturi</a>
-            <a href="/Accesori.html">Accesori</a>
-            <a href="/Suplimente.html">Suplimente</a>
-            <a href="/About.html">About</a>
+            <a class="tranzitie" href="/Produse.html">Produse</a>
+            <a  href="/Imbracaminte.html">Imbracaminte</a>
+            <a  href="/Locatie.html">Locatie</a>
+            <a  href="/Accesori.html">Accesori</a>
+            <a  href="/Suplimente.html">Suplimente</a>
+            <a  href="/About.html">About</a>
         </div>
         <div class="contact">
-            <a href="/Contact.html"><img src="contact.png" style="height: 20px;width: 20px; transform: scaleX(-1);"></a>
-            <a href="/cos.html"><img src="/cos.jpg" style="height: 20px;width: 20px;"></a>
+            <a href="/login.html"><img src="/user.png" style="height: 20px;width: 20px;"></a>
+            <a href="/Contact.html"><img src="telephone.png" style="height: 20px;width: 20px; transform: scaleX(-1);"></a>
+            <a href="/cos.html"><img src="/market.png" style="height: 20px;width: 20px;"></a>
         </div>
 
     </div>
 
     
     <div class="imgcv1">
-        <div class="half"><img src="https://images.squarespace-cdn.com/content/v1/63ae3ca7ba37fd047a9e4bda/51d6a4e3-7ffd-4db9-91df-c41626c78e3a/muay-thai-kickboxing-los-angeles-lobos-boxing-club.jpg" style="width: 1000px;"></div>
-        <div class="half"><img src="/Kickboxing-on-the-face.jpg" style="width: 1000px;" ></div>
+        <div class="half"><img src="https://images.squarespace-cdn.com/content/v1/63ae3ca7ba37fd047a9e4bda/51d6a4e3-7ffd-4db9-91df-c41626c78e3a/muay-thai-kickboxing-los-angeles-lobos-boxing-club.jpg" style="width: 1000px; margin-left: 50px;"></div>
+        <div class="half"><img src="/Kickboxing-on-the-face.jpg" style="width: 900px;" ></div>
     </div>
     
 
@@ -103,15 +113,18 @@
 
     </div>
     <div class="about1">
+        <img src="/incercare 1.jpeg" style="float: right; border-radius: 10px;">
         <h2>La K-OUT, pasiunea pentru kickboxing ne definește! Fondată în inima Timișoarei, România, compania noastră este dedicată furnizării de echipamente de kickbox de cea mai înaltă calitate, menite să inspire și să susțină performanța sportivilor de toate nivelurile.
 
             Indiferent dacă ești un începător entuziast sau un profesionist experimentat, K-OUT îți oferă tot ce ai nevoie pentru a-ți depăși limitele. De la mănuși de kickbox și protecții esențiale, până la îmbrăcăminte sportivă și accesorii de antrenament, fiecare produs din magazinul nostru este atent selectat pentru a asigura confort, siguranță și performanță maximă.</h2>
 
             <h1 class="about font">Misiunea Noastră:</h1>
+            <img src="/incercare 2.jpeg" style="float:left; border-radius: 10px;">
         <h2>
             La K-OUT, misiunea noastră este simplă: să sprijinim comunitatea kickboxing-ului prin furnizarea de echipamente de calitate superioară, accesibile și durabile. Credem în puterea sportului de a transforma vieți și suntem dedicați să oferim clienților noștri cele mai bune produse, astfel încât să se poată concentra pe ceea ce contează cu adevărat – antrenamentul și competiția.
         </h2>
             <h1 class="about font">De ce să alegi K-OUT?</h1>
+            <img src="/incercare 3.jpeg" style="float: right; border-radius: 10px;">
         <h2>
             De ce să alegi K-OUT?
             Calitate și Durabilitate: Echipamentele noastre sunt realizate din materiale premium, testate pentru a rezista celor mai intense antrenamente.
@@ -119,6 +132,7 @@
             Suport Local: Suntem o companie românească, mândră să contribuie la dezvoltarea comunității sportive locale din Timișoara și nu numai.
         </h2>
         <h1 class="about font">Te Așteptăm în Magazin!</h1>
+        <img src="/incercare 4.jpeg" style="float: left; border-radius: 10px;">
         <h2>Indiferent dacă te pregătești pentru prima ta sesiune de kickboxing sau pentru următorul meci competitiv, K-OUT este alături de tine la fiecare pas. Vizitează-ne în magazinul nostru din Timișoara sau explorează oferta noastră online pentru a descoperi echipamentele care te vor ajuta să ieși învingător din orice confruntare.
             
             K-OUT – Echipamente de Kickbox pentru Campioni!OSSU!</h2>

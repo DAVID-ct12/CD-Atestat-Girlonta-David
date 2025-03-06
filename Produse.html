@@ -12,10 +12,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 3px outset rgb(255, 255, 255) ;
             padding: 10px ;
             height: 20px;
             text-align: center;
+            backdrop-filter: blur(35px);
+            box-shadow: 0px 0px 30px rgba(227,228,237,0.37);
+            margin: 10px;
+            border-radius: 15px;
         }
         .redirect{
             display: flex;
@@ -32,27 +35,66 @@
             display: flex;
             gap: 10px;
         }
+        .nav a:hover{
+            color: white;
+            font-size: 16px;
+        }
+        .produs{
+            width: 300px;
+            background-color:rgb(61, 90, 151) ;
+            padding: 23px;
+            box-shadow: 0 5px 15px azure;
+            border-radius: 8px;
+
+        }
+        .produs img{
+            width: 100%;
+        }
+        .produs h3{
+            font-size: medium;
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+            margin:8px;
+        }
+        .produse{
+            display: flex;
+            gap: 80px;
+            margin: 40px;
+        }
     </style>
 </head>
-<body>
-    <div class="nav">
+<body style="background-color: rgb(7, 15, 43)">
+    <div class="nav" style="background-color: rgba(41, 40, 38, 0.808);">
         <div>
-        <a href="/main.html"><img src="/logo.jpg" style="height: 35px;width: 35px;"></a>
+            <a href="/main.html"><img src="/boxing-gloves.png" style="height: 30px;width: 35px;"></a>
         </div>
         <div class="redirect">
             <a href="/Produse.html">Produse</a>
             <a href="/Imbracaminte.html">Imbracaminte</a>
-            <a href="/Sporturi.html">Sporturi</a>
+            <a href="/Locatie.html">Locatie</a>
             <a href="/Accesori.html">Accesori</a>
             <a href="/Suplimente.html">Suplimente</a>
             <a href="/About.html">About</a>
         </div>
         <div class="contact">
-            <a href="/login.html"><img src="/login.png" style="height: 20px;width: 20px;"></a>
-            <a href="/Contact.html"><img src="contact.png" style="height: 20px;width: 20px; transform: scaleX(-1);"></a>
-            <a href="/cos.html"><img src="/cos.jpg" style="height: 20px;width: 20px;"></a>
+            <a href="/login.html"><img src="/user.png" style="height: 20px;width: 20px;"></a>
+            <a href="/Contact.html"><img src="telephone.png" style="height: 20px;width: 20px; transform: scaleX(-1);"></a>
+            <a href="/cos.html"><img src="/market.png" style="height: 20px;width: 20px;"></a>
         </div>
 
     </div>
+    <div class="produse">
+    <div class="produs">
+        <a href=""><img src="/brand gloves1.jpeg"></a>
+        <h3 class="prod-name">Manusi Box,Fairtex Special Edition ONE tournament</h3>
+    </div>
+    <div class="produs">
+        <a href=""><img src="/brand gloves2.jpeg"></a>
+        <h3 class="prod-name">Manusi Box,Fairtex Special Edition Glory tournament</h3>
+    </div>
+
+    </div>  
 </body>
 </html>
