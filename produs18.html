@@ -112,19 +112,13 @@
             display: flex;
             justify-content: center;
         }
-        .marime h4{
+        .marime button{
             margin:5px;
             padding:5px;
             background-color: white;
-            border:1px solid rgb(0, 0, 0);
+            border:1px outset rgb(0, 0, 0);
             border-radius: 5px;
             box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.27);
-        }
-        .marime h4:hover{
-            background-color: rgba(255, 255, 255, 0.199); 
-            font-size: 16px;
-            cursor:default;
-            border:2px solid black;
         }
         .buy{
             justify-content: center;
@@ -132,18 +126,14 @@
             margin-top: 20px;
             margin: 10px;
         }
-        .buy h2{
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            padding: 5px;
+        .buy button{
+            font-family:'Times New Roman', Times, serif;
+            padding: 10px;
             background-color: white;
             border-radius: 20px;
+            margin-top: 25px;
             width: 131px;
             box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.27);
-        }
-        .buy h2:hover{
-            background-color: rgba(255, 255, 255, 0.199); 
-            cursor:default;
-            border:2px solid black;
         }
     </style>
 </head>
@@ -159,7 +149,7 @@
             <a  href="/About.html">About</a>
         </div>
         <div class="contact">
-            <a href="/login.html"><img src="/user.png" style="height: 20px;width: 20px;"></a>
+               
             <a href="/Contact.html"><img src="telephone.png" style="height: 20px;width: 20px; transform: scaleX(-1);"></a>
             <a href="/cos.html"><img src="/market.png" style="height: 20px;width: 20px;"></a>
         </div>
@@ -170,20 +160,20 @@
             <div class="imagine"><img  src="/Phantom-Athletics-Schienbeinschoner-Muay-Thai-Striking-Blau-Rot-1_2048x_cc3015ac-e341-48da-9750-5c102161903e_1800x1800.webp"></div>
             <div class="scris">
                 <h1>Tibiere Phantom Athletics</h1>
-                <h2 style="width: 82px;">400 Lei</h2>
+                <h2 style="width: 100px;">100 EUR</h2>
                 <h3>Tibierele oferă amortizare superioară cu o zonă extra-groasă pentru protecție maximă. Stabilitatea impecabilă este asigurată de două închizători Velcro și o bandă elastică pe călcâi. Sunt fabricate din material PU durabil, 100% vegan, rezistent la uzură și ușor de întreținut.</h3>
                 <div class="marime">
-                    <h4>8 Oz</h4>
-                    <h4>10 Oz</h4>
-                    <h4>12 Oz</h4>
-                    <h4>14 Oz</h4>
+                    <button>S</button>
+                    <button>M</button>
+                    <button>L</button>
+                    <button>XL</button>
                 </div>
                 <div class="buy">
-                    <h2>Add to cart</h2>
+                    <button onclick="addToCart({id:'tibiere5', name:'Tibiere Phantom Athletics',price:100})">Add to cart</button>
                 </div>
             </div>
         </div>
     </div>
-
+    <script src="script.js"></script>
 </body>
 </html>

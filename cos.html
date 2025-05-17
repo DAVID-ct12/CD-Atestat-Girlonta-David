@@ -39,6 +39,38 @@
             color: white;
             font-size: 16px;
         }
+        .mijloc {
+            display: flex;
+            flex-direction: column;
+            margin-top: 130px;
+        }
+        .cart-item{
+            background-color: rgb(255, 255, 255);
+            margin: 40px;
+            padding: 30px;
+            width: 300px;
+            border-radius: 10px;
+            background-color: rgba(35, 66, 133, 0.589);
+            box-shadow: 0 5px 15px azure;
+        }
+        .paypal{
+            margin-top: 10px;
+            padding: 20px;
+            background-color: rgba(35, 66, 133, 0.589);
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px azure;
+        }
+        .total{
+            background-color: azure;
+            padding: 30px;
+            margin-top: 20px;
+            width: 110px;
+            border-radius: 10px;
+            background-color: rgba(35, 66, 133, 0.589);
+            box-shadow: 0 5px 15px azure;
+
+        }
     </style>
 </head>
 <body style="background-color: rgb(7, 15, 43)">
@@ -53,11 +85,23 @@
             <a href="/About.html">About</a>
         </div>
         <div class="contact">
-            <a href="/login.html"><img src="/user.png" style="height: 20px;width: 20px;"></a>
+               
             <a href="/Contact.html"><img src="telephone.png" style="height: 20px;width: 20px; transform: scaleX(-1);"></a>
             <a href="/cos.html"><img src="/market.png" style="height: 20px;width: 20px;"></a>
         </div>
 
     </div>
+    <div class="mijloc">
+        <p style="margin-left: 740px;" id="cart-items"></p>
+    
+        <div style="margin-left: 790px;" class="paypal" id="paypal-button-container"></div>
+
+        <p style="margin-left: 874px;" class="total" style="margin-left: px;" id="cart-total">Total: 0 EUR</p>
+
+    </div>
+    
+    
+      <script src="https://www.paypal.com/sdk/js?client-id=AQZHnk9W2bUre5PIBCqt0gHvkFVLWstgVTJoVzIhIbGEsW9lBn5GuFvgg48KiafsaA6v6Wvd6p98wbeU&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
+      <script src="./script.js"></script>
 </body>
 </html>
